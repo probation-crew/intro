@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('http://weloveiconfonts.com/api/?family=fontawesome');
+
+body, html {
+  font-family: 'Inconsolata', monospace;
+  color: #12130F;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+
+h1 {
+  font: 400 3em/1 "Inconsolata";
+  text-transform: uppercase;
+  margin: 3.5em 0;
+}
+
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+  color: #006494;
+  margin-right: 0.3em;
+}
+
+.fontawesome-phone a {
+  text-decoration: none;
+}
+
+.portrait-container {
+  max-width: 1020px;
+  margin: 0 auto;
+  *zoom: 1;
+  text-align: center;
+  position: relative;
+}
+.portrait-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.link {
+  display: inline-block;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 30px 10px;
+}
+
+.portrait {
+  height: 100px;
+  width: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.portrait:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.portrait-details {
+  white-space: nowrap;
+  cursor: text;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  bottom: 70px;
+  background: white;
+  border: solid 1px #006494;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+@media all and (max-width: 64em) {
+  .portrait-details {
+    white-space: normal;
+    margin-left: 50px;
+    min-width: 150px;
+  }
+}
+.portrait-details:before {
+  content: "";
+  position: absolute;
+  height: 2em;
+  width: 100%;
+  bottom: -2em;
+}
+.portrait-details:after {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  border-bottom: 1px solid #006494;
+  border-right: 1px solid #006494;
+  bottom: -6px;
+  height: 10px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 10px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.show .portrait-details {
+  bottom: 110px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.portrait-details li {
+  color: #5D737E;
+  padding: 0.3em 1.9em;
+  font: 400 0.8em/1 "Inconsolata";
+}
+.portrait-details li:first-child {
+  font: 700 1em/1 "Inconsolata";
+  padding: 0.5em;
+  border-bottom: solid 1px #fff;
+  background-size: 100%;
+}
+.portrait-details li:last-child {
+  border-bottom: none;
+  padding-bottom: 1.5em;
+}
+.portrait-details li:nth-child(2) {
+  color: #5D737E;
+  padding: 0.5em;
+  font-weight: 700;
+}
+.portrait-details li a {
+  color: #006494;
+  cursor: pointer;
+}
+
+.woogenius {
+  background-image: url(../images/woogenius.jpg);
+}
+
+.utopianami {
+  background-image: url(../images/utopianami.jpg);
+}
+
+.taeksoon {
+  background-image: url(../images/taeksoon.jpg);
+}
