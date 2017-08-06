@@ -11,7 +11,7 @@ body, html {
 h1 {
   font: 400 3em/1 "Inconsolata";
   text-transform: uppercase;
-  margin: 1em 0 2em 0;
+  margin: 1em 0 2.5em 0;
 }
 
 [class*="entypo-"]:before {
