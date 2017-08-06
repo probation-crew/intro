@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
-@import url('https://weloveiconfonts.com/api/?family=entypo');
 
 body, html {
   font-family: 'Inconsolata', monospace;
@@ -14,10 +13,10 @@ h1 {
   margin: 1em 0 2.5em 0;
 }
 
-[class*="entypo-"]:before {
-  font-family: "entypo", sans-serif;
+.fa {
   color: #006494;
-  margin-right: 0.2em;
+  font-size: 1.2em;
+  margin-right: 0.3em;
 }
 
 .fontawesome-phone a {
