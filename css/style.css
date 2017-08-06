@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
-@import url('http://weloveiconfonts.com/api/?family=fontawesome');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
 
 body, html {
   font-family: 'Inconsolata', monospace;
@@ -11,13 +11,13 @@ body, html {
 h1 {
   font: 400 3em/1 "Inconsolata";
   text-transform: uppercase;
-  margin: 3.5em 0;
+  margin: 1em 0 2em 0;
 }
 
-[class*="fontawesome-"]:before {
-  font-family: "FontAwesome", sans-serif;
+[class*="entypo-"]:before {
+  font-family: "entypo", sans-serif;
   color: #006494;
-  margin-right: 0.3em;
+  margin-right: 0.2em;
 }
 
 .fontawesome-phone a {
@@ -38,10 +38,15 @@ h1 {
 }
 
 .link {
-  display: inline-block;
-  font-size: 2em;
+  color: #006494;
+  display: block;
+  font-size: 1.5em;
   text-decoration: none;
   margin: 30px 10px;
+}
+
+.links {
+  margin-top: 4em;
 }
 
 .portrait {
